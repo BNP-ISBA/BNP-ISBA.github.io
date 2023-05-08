@@ -1,0 +1,12 @@
+Title: A new way for achieving adaptation
+<br><br>
+We propose a new strategy for adaptation to smoothness based on heavy tailed priors. 
+We illustrate it in a variety of settings, showing in particular that adaptive rates of contraction 
+in the minimax sense (up to logarithmic factors) are achieved without tuning of hyperparameters.
+We present numerical simulations corroborating the theory. 
+<br><br>
+This is ongoing joint work with Ismaël Castillo.
+<!--<p>
+Zoom link: <a href="https://ucl.zoom.us/j/95766601794"><b><font color=#0f5e9b>LINK</font></b></a> 
+</p>
+-->

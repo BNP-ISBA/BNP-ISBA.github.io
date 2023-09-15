@@ -1,0 +1,16 @@
+Abstract: Many scientific disciplines face a replicability crisis.  While these crises have many drivers, we focus on one. 
+Statistical hypotheses are translations of scientific hypotheses into statements about one or more distributions. 
+The most basic tests focus on the centers of the distributions.   Such tests implicitly assume a specific center, e.g.,
+the mean or the median.  Yet, scientific hypotheses do not always specify a particular center. 
+This ambiguity leaves a gap between scientific theory and statistical practice that can lead to rejection of a true null.
+The gap is compounded when we consider deficiencies in the formal statistical model.  
+Rather than testing a single center, we propose testing a family of plausible centers, 
+such as those induced by the Huber loss function (the Huber family).  
+Each center in the family generates a point null hypothesis and the resulting family of hypotheses constitutes a 
+familial null hypothesis.  A Bayesian nonparametric procedure is devised to test the familial null.  
+Implementation for the Huber family is facilitated by a novel pathwise optimization routine.  
+Along the way, we visit the question of what it means to be the center of a distribution.  
+The favorable properties of the new test are demonstrated theoretically and in case studies.  
+
+This is joint work with Ryan Thompson (University of New South Wales), 
+Catherine Forbes (Monash University), and Mario Peruggia (The Ohio State University).

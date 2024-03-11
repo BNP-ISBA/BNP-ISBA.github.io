@@ -44,19 +44,21 @@
 		border-spacing: 0;
 	}
 	 /* Added by Raffaele to visualize better the table on mobilephine*/
-	@media only screen and (max-width: 40em) {
-		thead th:not(:first-child) {
-			display: none;
+	 @media screen and (max-width: 600px) {
+		table thead {
+		  display: none;
 		}
-	
-		td, th {
-			display: block;
+		table td {
+		  display: flex;
 		}
-	
-		td[data-th]:before  {
-			content: attr(data-th);
+		
+		table td::before {
+		  content: attr(label);
+		  font-weight: bold;
+		  width: 120px;
+		  min-width: 120px;
 		}
-	}
+	  }
  /* END */
 	body {
 		-webkit-text-size-adjust: none;

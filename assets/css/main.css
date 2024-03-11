@@ -43,7 +43,21 @@
 		border-collapse: collapse;
 		border-spacing: 0;
 	}
-
+	 /* Added by Raffaele to visualize better the table on mobilephine*/
+	@media only screen and (max-width: 40em) {
+		thead th:not(:first-child) {
+			display: none;
+		}
+	
+		td, th {
+			display: block;
+		}
+	
+		td[data-th]:before  {
+			content: attr(data-th);
+		}
+	}
+ /* END */
 	body {
 		-webkit-text-size-adjust: none;
 	}

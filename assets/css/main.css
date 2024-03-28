@@ -58,6 +58,22 @@
 		  width: 120px;
 		  min-width: 120px;
 		}
+
+		td::after {
+			content: "";
+			display: inline-block;
+			width: 100%;
+		}
+	
+	span.left {
+		float: left;
+	}
+	
+	span.right {
+		float: right;
+	}
+
+
 	  }
  /* END */
 	body {

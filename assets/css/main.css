@@ -55,7 +55,7 @@
 		table td::before {
 		  content: attr(label);
 		  font-weight: bold;
-		  width: 100%;
+		  width: 500%;
 		  min-width: 120px;
 		}
 

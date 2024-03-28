@@ -43,7 +43,7 @@
 		border-collapse: collapse;
 		border-spacing: 0;
 	}
-	 /* Added by Raffaele to visualize better the table on mobilephine*/
+	 /* Added by Raffaele to visualize better the table on mobilephone*/
 	 @media screen and (max-width: 600px) {
 		table thead {
 		  display: none;
@@ -55,7 +55,7 @@
 		table td::before {
 		  content: attr(label);
 		  font-weight: bold;
-		  width: 120px;
+		  width: 100%;
 		  min-width: 120px;
 		}
 

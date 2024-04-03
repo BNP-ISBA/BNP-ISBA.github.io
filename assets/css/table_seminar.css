@@ -1,0 +1,6 @@
+@media only screen and (max-width: 600px) {
+    td:nth-of-type(1):before { content: "Date and Time"; }
+    td:nth-of-type(2):before { content: "Speaker"; }
+    td:nth-of-type(3):before { content: "Title"; }
+    td:nth-of-type(4):before { content: "Title 2"; }
+}

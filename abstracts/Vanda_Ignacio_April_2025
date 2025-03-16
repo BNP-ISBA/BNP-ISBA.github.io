@@ -1,0 +1,25 @@
+<html>
+<body>
+<p>
+    <b>Density regression via Dirichlet process mixtures of normal structured additive regression models</b>
+    </p>
+    <p>
+        Within Bayesian nonparametrics, dependent Dirichlet process mixture models provide a flexible approach for conducting
+inference about the conditional density function. However, several formulations of this class make either restrictive
+modelling assumptions or involve intricate algorithms for posterior inference. We propose a flexible and computationally
+convenient approach for density regression based on a single-weights dependent Dirichlet process mixture of normal
+distributions model for univariate continuous responses. We assume an additive structure for the mean of each mixture
+component and incorporate the effects of continuous covariates through smooth functions. The key components of our
+modelling approach are penalised B-splines and their bivariate tensor product extension. Our method also seamlessly
+accommodates categorical covariates, linear effects of continuous covariates, varying coefficient terms, and random
+effects, which is why we refer our model as a Dirichlet process mixture of normal structured additive regression models. A
+notable feature of our method is the simplicity of posterior simulation using Gibbs sampling, as closed-form full conditional
+distributions for all model parameters are available. Results from a simulation study demonstrate that our approach
+successfully recovers the true conditional densities and other regression functionals in challenging scenarios. Applications
+to three real datasets further underpin the broad applicability of our method.   
+    </p>
+    <p>
+        An R package, DDPstar, implementing the proposed method is available at CRAN(https://cran.r-project.org/web/packages/DDPstar/index.html).
+    </p>
+</body>
+</html>

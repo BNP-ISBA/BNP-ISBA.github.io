@@ -6,8 +6,8 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
   <head>
     <style>
       .line {
-        width: 600px; /* set the desired length of the line */
-        height: 1px; /* set the height of the line */
+        width: 600px;
+        height: 1px;
         background: repeating-linear-gradient(90deg,#dadada 0 10px,#0000 0 12px);
       }
 
@@ -18,24 +18,23 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
       }
 
       #main {
-        flex: 1;
-        margin-right: 320px; /* leave space for sidebar */
+        flex: 1; /* take remaining space */
         padding: 20px;
+        max-width: calc(100% - 320px); /* keep space for sidebar */
       }
 
       #sidebar {
         position: fixed;
         right: 0;
         top: 0;
-        width: 300px;
+        width: 300px;           /* fixed width */
         height: 100%;
-        overflow-y: auto; /* scrollable if content is long */
-        background: #f9f9f9; /* light background to separate it */
+        overflow-y: auto;
+        background: #f9f9f9;    /* light background */
         border-left: 1px solid #ddd;
         padding: 20px;
       }
 
-      /* Make sure body doesn’t hide under fixed sidebar */
       body {
         margin: 0;
         font-family: Arial, sans-serif;

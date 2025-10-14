@@ -1,0 +1,30 @@
+<html>
+<body>
+<p>
+    <b>Bayesian nonparametric mixture models and the posterior number of clusters
+   </b>
+    </p>
+    <p>
+      Bayesian nonparametric (BNP) mixture models, such as Dirichlet and Pitman–Yor processes, 
+
+are powerful tools for clustering because they allow an unbounded number of components. 
+
+This flexibility is appealing, but it comes with an implicit prior belief: as the sample size grows, the number of clusters tends to infinity. 
+
+While this seems to be a reasonable prior belief in most applications, there has been recent interest in examining the misspecified setting where data arise from a finite mixture. 
+
+The central question is whether, in this setting, the data can override the prior and force the posterior distribution on the number of clusters to concentrate on a finite value.
+
+Miller and Harrison (2014) showed that for Dirichlet and Pitman–Yor mixtures, the answer is negative—the posterior is inconsistent for the number of clusters. 
+
+In this talk, we discuss these findings, generalise them and examine several solutions. We consider a broad range of BNP priors, including Gibbs-type processes and overfitted finite mixtures (Rousseau & Mengersen, 2011). 
+
+Along the way, we revisit related results on the consistency of the mixing measure and discuss practical strategies proposed in the literature, such as the merge–truncate–merge algorithm of Guha et al. (2019) and the use of hyperpriors on BNP parameters as in Ascolani et al. (2023).
+
+The talk will provide intuition for why these inconsistency phenomena occur, explore their theoretical underpinnings, and highlight implications for clustering practice. 
+
+The contents of this presentation are based on Lawless et al. (2023) and Alamichel et al. (2024).
+    </p>
+
+</body>
+</html>

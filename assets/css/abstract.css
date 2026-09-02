@@ -1,0 +1,81 @@
+/* ==========================================================================
+   BNP-ISBA — stylesheet for the abstract pages (abstracts/*.html)
+   Small and self-contained: an abstract page is one title and one or two
+   paragraphs, so it does not need the full site layout.
+   Colours are the same tokens as assets/css/site.css.
+   ========================================================================== */
+
+:root {
+  --brand:      #1191d6;
+  --brand-dark: #0f5e9b;
+  --bg:         #ffffff;
+  --bg-soft:    #f7f9fb;
+  --text:       #2b3440;
+  --text-muted: #64748b;
+  --border:     #e2e8f0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --brand:      #4bb4ec;
+    --brand-dark: #7cc9f0;
+    --bg:         #0f1620;
+    --bg-soft:    #151e2b;
+    --text:       #dce3ec;
+    --text-muted: #93a1b3;
+    --border:     #26323f;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 3rem 1.25rem 4rem;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+               Arial, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* The abstract title is the first <p><b>…</b></p> of each page. */
+p:first-of-type b,
+h1, h2 {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -.01em;
+  margin-bottom: 1rem;
+  text-wrap: balance;
+}
+
+p { margin: 0 0 1.25rem; }
+
+a {
+  color: var(--brand-dark);
+  text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--brand-dark) 35%, transparent);
+}
+a:hover { color: var(--brand); border-bottom-color: currentColor; }
+a:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
+
+/* "← Back to webinars" link added at the top of every abstract page. */
+.back-link {
+  display: inline-block;
+  margin-bottom: 2rem;
+  padding-bottom: .75rem;
+  border: 0;
+  border-bottom: 1px solid var(--border);
+  width: 100%;
+  font-size: .875rem;
+  color: var(--text-muted);
+}
+.back-link:hover { color: var(--brand); border-bottom-color: var(--border); }
+
+/* Old inline <font> tags may still appear in a few abstracts; neutralise them. */
+font { color: inherit !important; }

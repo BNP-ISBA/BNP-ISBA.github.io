@@ -508,6 +508,36 @@ tbody td:first-child {
   white-space: nowrap;
 }
 
+/* --- Callout: a tinted panel for the one thing a reader must act on ------ */
+.callout {
+  margin: var(--space-6) 0;
+  padding: var(--space-5);
+  background: var(--brand-tint);
+  border: 1px solid color-mix(in srgb, var(--brand) 25%, transparent);
+  border-radius: var(--radius);
+  max-width: var(--measure);
+}
+.callout h2 { margin: 0 0 var(--space-3); font-size: 1.1rem; }
+.callout p:last-child { margin-bottom: 0; }
+
+/* A link that reads as a download, not as running text. */
+.button {
+  display: inline-block;
+  padding: var(--space-3) var(--space-5);
+  border: 0;
+  border-radius: var(--radius-sm);
+  background: var(--brand-dark);
+  color: #ffffff;
+  font-size: .9375rem;
+  font-weight: 600;
+  transition: background .15s ease;
+}
+.button:hover { background: var(--brand); color: #ffffff; }
+@media (prefers-color-scheme: dark) {
+  .button { color: #0f1620; }
+  .button:hover { color: #0f1620; }
+}
+
 /* --- 4.5 Numbered clauses (bylaws, clauses) ------------------------------
    One <ol class="boxes"> of <li class="box"> items. The clause number is a
    badge that sits INSIDE the card, in a reserved gutter, so it can never

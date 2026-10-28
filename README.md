@@ -15,7 +15,7 @@ looks exactly like the live site. No local server, no commands.
 
 ```
 index.html  events.html  webinars.html  officers.html
-bylaws.html  clauses.html  proposals.html
+bylaws.html  clauses.html  proposals.html (redirect)
 │
 ├── assets/
 │   ├── js/partials.js   ← the navigation, the news, the footer.
@@ -26,7 +26,7 @@ bylaws.html  clauses.html  proposals.html
 │   │                      the variables in the `:root` block at the top.
 │   ├── css/abstract.css   styling for the abstract pages
 │   ├── files/             the ISBA proposals PDF and the budget spreadsheet,
-│   │                      linked from proposals.html
+│   │                      linked from clauses.html
 │   └── legacy/            the old HTML5UP "Editorial" theme, no longer used —
 │                          safe to delete once you are happy with the new site
 │
@@ -44,7 +44,7 @@ bylaws.html  clauses.html  proposals.html
 | Add a webinar                 | `webinars.html` — copy the `<tr>` template     |
 | Add an event                  | `events.html` — copy a `<tr>`                  |
 | Change a board member         | `officers.html` — copy an `<article>` block    |
-| Update the proposal guidance  | `proposals.html`                               |
+| Update the hosting rules      | `clauses.html` ("Hosting" in the navigation)   |
 | Change the colours or spacing | `assets/css/site.css`, the `:root` block       |
 
 ### Editing `partials.js`
@@ -86,9 +86,10 @@ Copy any file in `abstracts/`, replace the title and text, then link to it from
   or reference line. Copy any of them when adding a new abstract.
 * The long listing tables (events, webinars) carry `class="list-table"`,
   which sets them a step smaller than body text. Add it to any new one.
-* `proposals.html` is reached from the Events and Clauses pages, not from the
-  navigation bar. The budget spreadsheet is served from `assets/files/` as
-  issued by ISBA.
+* `clauses.html` ("Hosting a BNP meeting") holds the selection process, the
+  proposal outline and the rules for the conference and the workshops.
+  `proposals.html` only redirects there, so old links keep working. The
+  budget outline is served from `assets/files/`.
 * Dark mode follows the reader's system setting; nothing to configure.
 * There is no analytics script. The old Universal Analytics tag
   (`UA-90234804-1`) was removed — Google shut that product down in 2023 and it

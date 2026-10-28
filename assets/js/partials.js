@@ -24,7 +24,7 @@ const NAV = `
     <li><a href="webinars.html">Webinars</a></li>
     <li><a href="officers.html">Board</a></li>
     <li><a href="bylaws.html">Bylaws</a></li>
-    <li><a href="clauses.html">Clauses</a></li>
+    <li><a href="clauses.html">Hosting</a></li>
   </ul>
 `;
 

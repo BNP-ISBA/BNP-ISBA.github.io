@@ -289,12 +289,14 @@ code, pre { font-family: var(--font-mono); font-size: .9em; }
 
 #main { min-width: 0; }              /* lets wide tables scroll, not overflow */
 
-/* Running text gets a reading measure; tables, card grids and the numbered
-   clause cards keep the full width of the column. */
+/* Running text and the numbered clause cards share one reading measure, so
+   their right edges line up; tables and card grids keep the full width of
+   the column. */
 #main > p,
 #main > section > p,
 #main > ul,
-#main > ol:not(.boxes) { max-width: var(--measure); }
+#main > ol,
+#main > section > ol { max-width: var(--measure); }
 
 /* The home page is wider, because it carries the news column as well. */
 #wrapper.with-news {
@@ -586,6 +588,17 @@ ol.boxes {
   font-variant-numeric: tabular-nums;
 }
 
+/* A clause that opens with a short title: the title sits on its own line,
+   level with the badge, and whatever follows keeps one even gap. */
+.box-title {
+  display: block;
+  color: var(--brand-dark);
+  font-weight: 700;
+}
+/* Anything after the title lines up with the text of the bullets. */
+.box-title ~ p { margin: var(--space-3) 0 0; padding-left: 1.15em; }
+.box-title ~ p.muted { font-size: .9375rem; }
+
 /* Nested bullets inside a clause. */
 .box ul {
   margin: var(--space-3) 0 0;
@@ -607,10 +620,10 @@ ol.boxes {
 }
 .box ul ul > li::before { background: none; border: 1px solid var(--text-muted); }
 
-/* Narrow screens: tuck the badge above the text rather than beside it. */
+/* Narrow screens: tighter padding, badge still level with the first line. */
 @media (max-width: 34rem) {
-  .box { padding-left: var(--space-5); padding-top: calc(var(--space-5) + 2.25rem); }
-  .box::before { top: var(--space-4); }
+  .box { padding: var(--space-4); padding-left: calc(var(--space-4) + 2.5rem); }
+  .box::before { left: var(--space-4); top: var(--space-4); }
 }
 
 /* --- 4.6 Board members --------------------------------------------------- */
